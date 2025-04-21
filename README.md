@@ -78,7 +78,33 @@ Coming soon
 <!--python metrics.py -m <path to pre-trained model>-->
 <!--```-->
 ### Datasets
-Coming soon
+#### Using Our Prepared Data
+
+1. Create your dataset directory  `your_data`.
+2. Our prepared data, including both TFP and TFI reconstruction, can be downloaded [here](https://pan.baidu.com/s/14gmAUQ78rfGs2hMzKuxEZQ?pwd=2xjx ). If you have difficulty downloading the data (e.g. network issue), please email the authors.
+
+3.For synthetic data, the directory should look like this:
+
+```bash
+your_data/scene_name/
+├── TFI_noise/
+├── TFP_noise/
+├── test/
+├──transforms_test.json
+├──transforms_train.json
+└──transforms_TFP.json
+```
+
+For real-world data, the directory should look like this:
+
+```bash
+your_data/scene_name/
+├── train/
+├── tfp/
+└──sparse/
+```
+
+Please note that we do not have ground-truth in  real-world datasets.
 
 ## Processing your own Scenes
 
